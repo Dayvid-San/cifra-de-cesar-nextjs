@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import TextInput from '../components/TextInput/TextInput';
 import OriginalText from '../components/OriginalText/OriginalText';
-import DecodedText from '../components/DecodedText/DecodedText';
+import DecodedText from '../components/OutputText/Output';
 import Footer from '../components/Footer/Footer';
 
 import styles from '../styles/Home.module.css';

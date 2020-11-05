@@ -10,9 +10,9 @@ const DecodedText: React.FC = () => {
   let cryptedText = encrypter('text');
 
   return (
-    <div className={style.DecodedText}>
+    <div className={style.OuputText}>
       <h2>Texto criptografado</h2>
-      <p className={style.DecodedTextParagraph}>{cryptedText}</p>
+      <p className={style.OuputTextParagraph}>{cryptedText}</p>
     </div>
   );
 };
