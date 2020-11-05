@@ -1,0 +1,15 @@
+.InputText {
+  caret-color: aqua;
+  margin: 10px;
+  background-color: black;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  border-radius: 15px;
+  width: 80%;
+  height: 40%;
+  text-align: justify;
+  text-transform: lowercase;
+  padding: 15px;
+}
+

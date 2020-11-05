@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+.App {
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: aqua;
+  font-size: 2.2rem;
+  /* min-height: 900px; */
+  padding: 30px;
+  padding-top: 0px;
+  margin: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-width: 400px;
+  width: auto;
+  text-align: center;
+}
+
+.AppParagraph {
+  text-align: justify;
+  text-shadow: 0 1px 1px white;
+}
+
+.Image {
+  animation: spin infinite linear;
+  animation-duration: 15s;
+  -webkit-animation: spin infinite linear;
+  -webkit-animation-duration: 15s;
+  border: 2px solid grey;
+  border-radius: 100px;
+  float: left;
+  block-size: 150px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.MainTitle {
+  text-shadow: 1px 2px 2px rgb(88, 88, 88);
+  text-transform: uppercase;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
