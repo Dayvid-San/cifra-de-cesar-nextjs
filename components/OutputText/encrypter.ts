@@ -62,15 +62,23 @@ const encrypter = (text: string, action: string) => {
     if (action === 'decrypt') {
       if (indexAlpha !== -1) {
         if (indexAlpha <= 2) {
-          let newArr = ['x', 'y', 'z', ...alpha]
-          console.log(newArr)
-          return newArr[indexAlpha ]
+          let newArr = ['x', 'y', 'z', ...alpha];
+
+          return newArr[indexAlpha];
         }
 
         return alpha[indexAlpha - 3];
       }
 
-      if (indexNumeric !== -1) return numeric[indexNumeric - 3];
+      if (indexNumeric !== -1) {
+        if (indexNumeric <= 2) {
+          let newArr = ['7', '8', '9', ...numeric];
+          
+          return newArr[indexNumeric];
+        }
+
+        return numeric[indexNumeric - 3];
+      }
     }
 
     return letter;

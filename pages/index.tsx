@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Main from '../components/Main/Main';
 import RadioInput from '../components/RadioInput/RadioInput';
@@ -10,7 +10,7 @@ import Footer from '../components/Footer/Footer';
 
 export default function Home() {
   const [inputText, setInputText] = useState('');
-  const [action, setAction] = useState('crypt');
+  const [action, setAction] = useState('');
 
   const getInputTextHandler = (text: string) => {
     setInputText(text);
@@ -18,8 +18,11 @@ export default function Home() {
 
   const setActionHandler = (action: string) => {
     setAction(action);
-    setInputText('');
   };
+
+  useEffect(() => {
+    setInputText('')
+  }, [action]);
 
   return (
     <div>
@@ -50,11 +53,14 @@ export default function Home() {
 
         <TextInput getInputText={getInputTextHandler} action={action} />
 
-        {(inputText && <OriginalText originalText={inputText} />) || (
-          action === 'crypt' ? <p>Escreva um texto para criptografar.</p> : <p>Escreva um texto para descriptografar.</p>
-        )}
+        {(inputText && <OriginalText originalText={inputText} />) ||
+          (action === 'crypt' ? (
+            <p>Escreva um texto para criptografar.</p>
+          ) : (
+            <p>Escreva um texto para descriptografar.</p>
+          ))}
 
-        {inputText && <Output inputText={inputText} action={action} />}
+        {inputText && action !== '' && <Output inputText={inputText} action={action} />}
 
         <Footer />
       </Main>
