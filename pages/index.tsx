@@ -38,10 +38,6 @@ export default function Home() {
           name="keywords"
           content="HTML, CSS, JavaScript, ReactJS, ReactDOM, NextJS, César, Cifra, Criptografia"
         />
-        <meta
-          property="og:image"
-          content="https://cifra-de-cesar-nextjs.vercel.app/_next/image?url=%2Fimg%2FcesarLogo.webp&w=384&q=75"
-        ></meta>
         <link
           href="https://fonts.googleapis.com/css?family=VT323"
           rel="stylesheet"
