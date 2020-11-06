@@ -81,9 +81,9 @@ Neste projeto, voçê pode decidir qual ação deve ser realizada, encriptar ou 
 
 ## Como surgiu a idéia?
 
-A idéia começou como um desafio de um professor da disciplina _programação_. Ele me desafiou(sim! foi direto pra mim pois já estudava JavaScript por 6 meses) a criar um programa em Java que encripta um texto e exibe na tela. O desafio foi concluído antes do fim da aula. Mas, nesta época, eu começei a estudar React, e então para fixar os conhecimentos básicos da biblioteca, decidir refazer o desafio, desta vez desenvolvendo uma aplicação web. Inicialmente, este projeto estava em React puro, com nenhuma funcionalidade extra. Agora, este projeto que está documentado, foi feito em React, mas dentro do framework NextJS, também com o intuito de fixar os conceitos aprendido com o NextJS. A aplicação foi refeita, quase que por completo. Os assets e CSS foram reaproveitados em parte, mas todo o código foi reescrito para se encaixar na estrutura do NextJS e para usar as funcionalidades mais recentes do React(React Hooks) e NextJS.
-
 <p id="porque"></p>
+
+A idéia começou como um desafio de um professor da disciplina _programação_. Ele me desafiou(sim! foi direto pra mim pois já estudava JavaScript por 6 meses) a criar um programa em Java que encripta um texto e exibe na tela. O desafio foi concluído antes do fim da aula. Mas, nesta época, eu começei a estudar React, e então para fixar os conhecimentos básicos da biblioteca, decidir refazer o desafio, desta vez desenvolvendo uma aplicação web. Inicialmente, este projeto estava em React puro, com nenhuma funcionalidade extra. Agora, este projeto que está documentado, foi feito em React, mas dentro do framework NextJS, também com o intuito de fixar os conceitos aprendido com o NextJS. A aplicação foi refeita, quase que por completo. Os assets e CSS foram reaproveitados em parte, mas todo o código foi reescrito para se encaixar na estrutura do NextJS e para usar as funcionalidades mais recentes do React(React Hooks) e NextJS.
 
 ### Onde está? :rocket:
 
@@ -160,6 +160,7 @@ Como este site foi feito em NextJS, ele foi otimizado para oferecer a melhor exp
 ### Autor
 
 <p id="autor"></p>
+
   <kbd>
  <img style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/37749943?s=460&u=70f3bf022f3a0f28c332b1aa984510910818ef02&v=4" width="100px;" alt="iglan cardeal"/>
   </kbd>
