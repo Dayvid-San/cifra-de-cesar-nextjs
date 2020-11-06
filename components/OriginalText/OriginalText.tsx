@@ -2,12 +2,18 @@ import React from 'react';
 
 import styles from './OriginalText.module.css';
 
-const OriginalText: React.FC = () => {
+interface Props {
+  originalText: string;
+}
+
+const OriginalText: React.FC<Props> = (props) => {
   return (
-    <div className={styles.OriginalText}>
+    <>
       <h2>Texto original</h2>
-      <p>{'text'}</p>
-    </div>
+      <div className={styles.OriginalText}>
+        <p>{props.originalText}</p>
+      </div>
+    </>
   );
 };
 

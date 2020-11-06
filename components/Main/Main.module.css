@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+.App {
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: aqua;
+  /* min-height: 900px; */
+  padding: 30px;
+  padding-top: 0px;
+  margin: 25vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* min-width: 400px; */
+  width: auto;
+  text-align: center;
+}
+
+.AppParagraph {
+  text-align: justify;
+}
+
+.Image {
+  border: 2px solid grey;
+  border-radius: 100px;
+  block-size: 150px;
+  animation: spin infinite linear;
+  animation-duration: 15s;
+  /* -webkit-animation: spin infinite linear;
+  -webkit-animation-duration: 15s; */
+  -webkit-animation:spin 15s infinite linear;
+  -moz-animation:spin 15s infinite linear;
+  -o-animation:spin 15s infinite linear;
+  -ms-animation:spin 15s infinite linear;
+}
+
+.MainTitle {
+  text-transform: uppercase;
+}
+
+.MainContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .App {
+    margin: 5px;
+    font-size: 1rem;
+  }
+
+  .MainTitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .App {
+    margin: 20px;
+  }
+
+  .MainContent figure {
+    display: block;
+  }
+
+  .MainContent figure sub {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .MainContent {
+    display: inline;
+    flex-direction: column;
+  }
+}

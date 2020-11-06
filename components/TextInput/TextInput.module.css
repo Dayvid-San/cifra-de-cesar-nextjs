@@ -9,7 +9,22 @@
   width: 80%;
   height: 40%;
   text-align: justify;
-  text-transform: lowercase;
   padding: 15px;
 }
 
+.Button {
+  margin: 10px;
+  background-color: black;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  border-radius: 15px;
+  border: 1px solid aqua;
+  padding: 15px;
+  cursor: pointer;
+  transition: .2s all;
+}
+
+.Button:hover {
+  background-color: rgba(13, 150, 150, 0.219);
+}

@@ -4,9 +4,112 @@
   border-radius: 15px;
   padding: 20px;
   padding-top: 2px;
-  margin-top: 50px;
+  margin-top: 20px;
+  transition: 1s all;
+  animation: enable 1s linear;
+  -webkit-animation: enable 1s linear;
+  -moz-animation: enable 1s linear;
+  -o-animation: enable 1s linear;
+  -ms-animation: enable 1s linear;
 }
 
 .OutputTextParagraph {
-  text-shadow: 0 2px 2px black;
+  text-shadow: 0 3px 2px black;
 }
+
+.OutputTextParagraph::selection {
+  background: rgba(0, 0, 0, 0.61);
+  color: inherit;
+}
+
+.OutputTextParagraph::-moz-selection {
+  background: rgba(0, 0, 0, 0.61);
+  color: inherit;
+}
+
+.CopyButton {
+  margin: 10px;
+  background-color: black;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  border-radius: 15px;
+  border: 1px solid aqua;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.CopyButton:hover {
+  background-color: rgba(13, 150, 150, 0.219);
+}
+
+.Dialog {
+  background: #000;
+  color: inherit;
+  animation: fade .5s linear;
+  -webkit-animation: fade .5s linear;
+  -moz-animation: fade .5s linear;
+  -o-animation: fade .5s linear;
+  -ms-animation: fade .5s linear;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes enable {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes enable {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes enable {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+

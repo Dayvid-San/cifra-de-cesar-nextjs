@@ -4,6 +4,50 @@
   border-radius: 15px;
   padding: 20px;
   padding-top: 2px;
-  margin-top: 50px;
+  margin-top: 20px;
+  transition: 1s all;
+  text-shadow: 0 3px 2px black;
+  animation: enable 1s linear;
+  -webkit-animation: enable 1s linear;
+  -moz-animation: enable 1s linear;
+  -o-animation: enable 1s linear;
+  -ms-animation: enable 1s linear;
 }
 
+.OriginalText p::selection {
+  background: rgba(0, 0, 0, 0.61);
+  color: inherit;
+}
+
+.OriginalText p::-moz-selection {
+  background: rgba(0, 0, 0, 0.61);
+  color: inherit;
+}
+
+@keyframes enable {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes enable {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes enable {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,19 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-import style from './Decoded.module.css';
+import style from './Output.module.css';
 
-const DecodedText: React.FC = () => {
-  const encrypter = (text: string) => {
-    return text;
+import encrypter from './encrypter';
+
+interface Props {
+  inputText: string;
+}
+
+const DecodedText: React.FC<Props> = (props) => {
+  const [copied, setCopied] = useState(false);
+  const cryptedText = encrypter(props.inputText);
+
+  const onCopyHandler = () => {
+    setCopied(true);
+
+    window.setTimeout(() => {
+      setCopied(false);
+    }, 4000);
   };
 
-  let cryptedText = encrypter('text');
-
   return (
-    <div className={style.OuputText}>
+    <>
       <h2>Texto criptografado</h2>
-      <p className={style.OuputTextParagraph}>{cryptedText}</p>
-    </div>
+      <div className={style.OutputText}>
+        <p className={style.OutputTextParagraph}>{cryptedText}</p>
+
+        <CopyToClipboard text={cryptedText} onCopy={onCopyHandler}>
+          <button className={style.CopyButton}>Copiar texto</button>
+        </CopyToClipboard>
+        <br />
+        <dialog className={style.Dialog} open={copied}>Texto copiado!</dialog>
+      </div>
+    </>
   );
 };
 
