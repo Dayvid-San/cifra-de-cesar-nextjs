@@ -29,7 +29,7 @@ const RadioInput: React.FC<Props> = (props) => {
         checked={action === 'crypt'}
         onChange={radioInputHandler}
       />
-      <label htmlFor="crypt">Criptar texto</label>
+      <label htmlFor="crypt">Encriptar texto</label>
       <br />
       <input
         type="radio"

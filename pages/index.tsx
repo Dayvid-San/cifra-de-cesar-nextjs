@@ -2,11 +2,11 @@ import Head from 'next/head';
 import { useState } from 'react';
 
 import Main from '../components/Main/Main';
+import RadioInput from '../components/RadioInput/RadioInput';
 import TextInput from '../components/TextInput/TextInput';
 import OriginalText from '../components/OriginalText/OriginalText';
 import Output from '../components/OutputText/Output';
 import Footer from '../components/Footer/Footer';
-import RadioInput from '../components/RadioInput/RadioInput';
 
 export default function Home() {
   const [inputText, setInputText] = useState('');
