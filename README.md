@@ -65,6 +65,7 @@ Neste projeto, voçê pode decidir qual ação deve ser realizada, encriptar ou 
    ```
 
 - Decriptar:
+ Voçê usou ou recebeu uma mensagem que foi criptografada nesta aplicação, logo para vê-lo descriptografado, selecione a opção `Decriptar`. O resultado será exibido abaixo, mostrando o texto original(seu texto criptografado) e logo abaixo o texto descriptografado.
 
 ## Como surgiu a idéia?
 

@@ -24,7 +24,7 @@ const DecodedText: React.FC<Props> = (props) => {
 
   return (
     <>
-      <h2>Texto criptografado</h2>
+      <h2>{props.action === 'crypt' ? 'Texto criptografado' : 'Texto descriptografado'}</h2>
       <div className={style.OutputText}>
         <p className={style.OutputTextParagraph}>{cryptedText}</p>
 

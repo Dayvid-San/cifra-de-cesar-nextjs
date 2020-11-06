@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './Main.module.css';
 
 const Main: React.FC = (props) => {
-  const [time, setTime] = useState(new Date().toLocaleTimeString('br'));
+  const [time, setTime] = useState('');
 
   useEffect(() => {
     const timer = window.setInterval(() => {
@@ -30,7 +30,7 @@ const Main: React.FC = (props) => {
             width={150}
             height={150}
           />
-          <sub>{time}</sub>
+          <sub>{time || <span>&nbsp;</span>}</sub>
         </figure>
         <p className={styles.AppParagraph}>
           A cifra de César é uma das mais simples e conhecidas técnicas de

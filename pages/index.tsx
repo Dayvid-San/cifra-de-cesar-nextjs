@@ -51,7 +51,7 @@ export default function Home() {
         <TextInput getInputText={getInputTextHandler} action={action} />
 
         {(inputText && <OriginalText originalText={inputText} />) || (
-          <p>Escreva um texto para criptografar.</p>
+          action === 'crypt' ? <p>Escreva um texto para criptografar.</p> : <p>Escreva um texto para descriptografar.</p>
         )}
 
         {inputText && <Output inputText={inputText} action={action} />}
