@@ -39,9 +39,9 @@
 - [Autor](#autor)
 <!--te-->
 
-### Sobre :coffee:
-
 <p id="sobre"></p>
+
+### Sobre :coffee:
 
 ![tela-inicial](./public/img/cifra-cesar-home.png)
 
@@ -79,21 +79,21 @@ Neste projeto, voçê pode decidir qual ação deve ser realizada, encriptar ou 
   este texto foi criptografado
   ```
 
-## Como surgiu a idéia?
-
 <p id="porque"></p>
+
+## Como surgiu a idéia?
 
 A idéia começou como um desafio de um professor da disciplina _programação_. Ele me desafiou(sim! foi direto pra mim pois já estudava JavaScript por 6 meses) a criar um programa em Java que encripta um texto e exibe na tela. O desafio foi concluído antes do fim da aula. Mas, nesta época, eu começei a estudar React, e então para fixar os conhecimentos básicos da biblioteca, decidir refazer o desafio, desta vez desenvolvendo uma aplicação web. Inicialmente, este projeto estava em React puro, com nenhuma funcionalidade extra. Agora, este projeto que está documentado, foi feito em React, mas dentro do framework NextJS, também com o intuito de fixar os conceitos aprendido com o NextJS. A aplicação foi refeita, quase que por completo. Os assets e CSS foram reaproveitados em parte, mas todo o código foi reescrito para se encaixar na estrutura do NextJS e para usar as funcionalidades mais recentes do React(React Hooks) e NextJS.
 
-### Onde está? :rocket:
-
 <p id="host"></p>
+
+### Onde está? :rocket:
 
 Este site está hospedado na plataforma [Vercel](https://vercel.com/) de forma gratuita. A plataforma usa a branch `master` deste projeto para realizar o build e deploy da aplicação, ou seja, qualquer alteração nesta branch irá refletir na aplicação em produção. A Vercel é também a desenvolvedora do NextJS.
 
-### Como usar localmente? :pushpin:
-
 <p id="como-usar"></p>
+
+### Como usar localmente? :pushpin:
 
 #### Deseja usar a aplicação localmente e fazer as suas modificações?
 
@@ -132,9 +132,9 @@ $ yarn dev
 
 Agora abra seu navegador na URL `http://localhost:3000` e verá a página inicial do projeto.
 
-### Quais tecnologias/ferramentas foram usadas? :wrench:
-
 <p id="tecnologias"></p>
+
+### Quais tecnologias/ferramentas foram usadas? :wrench:
 
 - [NodeJS](https://nodejs.org/en/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -143,9 +143,9 @@ Agora abra seu navegador na URL `http://localhost:3000` e verá a página inicia
 - [Git](https://git-scm.com)
 - [VSCode](https://code.visualstudio.com/)
 
-### Performance da aplicação no [PageSpeed](https://developers.google.com/speed/pagespeed/insights/?hl=pt-br)
-
 <p id="pagespeed"></p>
+
+### Performance da aplicação no [PageSpeed](https://developers.google.com/speed/pagespeed/insights/?hl=pt-br)
 
 Como este site foi feito em NextJS, ele foi otimizado para oferecer a melhor experiência possível para o usuário. Diversos recursos do NextJS como `Automatic code-splitting`, `Server-side rendering`, `CSS-in-JS styling`, `Image Optimization`, dentre outros, e otimizações de imagens feitas por mim, resultaram em uma excelente métrica no Google PageSpeed. Veja abaixo os resultados obtidos nos testes para dispositivos móveis e computadores.
 
@@ -157,9 +157,9 @@ Como este site foi feito em NextJS, ele foi otimizado para oferecer a melhor exp
 
   ![desktop performance](./public/img/cifra-cesar-ps-desktop.png)
 
-### Autor
-
 <p id="autor"></p>
+
+### Autor
 
   <kbd>
  <img style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/37749943?s=460&u=70f3bf022f3a0f28c332b1aa984510910818ef02&v=4" width="100px;" alt="iglan cardeal"/>
