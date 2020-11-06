@@ -16,11 +16,23 @@ const DecodedText: React.FC<Props> = (props) => {
 
   const onCopyHandler = () => {
     setCopied(true);
+
+    window.setTimeout(() => {
+      setCopied(false);
+    }, 4000);
   };
 
+  useEffect(() => {
+    return () => setCopied(false);
+  }, []);
+  
   return (
     <>
-      <h2>{props.action === 'crypt' ? 'Texto criptografado' : 'Texto descriptografado'}</h2>
+      <h2>
+        {props.action === 'crypt'
+          ? 'Texto criptografado'
+          : 'Texto descriptografado'}
+      </h2>
       <div className={style.OutputText}>
         <p className={style.OutputTextParagraph}>{cryptedText}</p>
 
