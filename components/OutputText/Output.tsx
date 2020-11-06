@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 import style from './Output.module.css';
@@ -16,10 +16,6 @@ const DecodedText: React.FC<Props> = (props) => {
 
   const onCopyHandler = () => {
     setCopied(true);
-
-    window.setTimeout(() => {
-      setCopied(false);
-    }, 4000);
   };
 
   return (

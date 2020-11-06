@@ -10,7 +10,7 @@ import Footer from '../components/Footer/Footer';
 
 export default function Home() {
   const [inputText, setInputText] = useState('');
-  const [action, setAction] = useState('');
+  const [action, setAction] = useState('crypt');
 
   const getInputTextHandler = (text: string) => {
     setInputText(text);
@@ -19,9 +19,9 @@ export default function Home() {
   const setActionHandler = (action: string) => {
     setAction(action);
   };
-
+  
   useEffect(() => {
-    setInputText('')
+    setInputText('');
   }, [action]);
 
   return (
@@ -60,7 +60,7 @@ export default function Home() {
             <p>Escreva um texto para descriptografar.</p>
           ))}
 
-        {inputText && action !== '' && <Output inputText={inputText} action={action} />}
+        {inputText && <Output inputText={inputText} action={action} />}
 
         <Footer />
       </Main>
