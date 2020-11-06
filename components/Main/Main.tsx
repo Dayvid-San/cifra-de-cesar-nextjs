@@ -24,7 +24,7 @@ const Main: React.FC = (props) => {
         <figure>
           <Image
             className={styles.Image}
-            src="/img/cesarLogo.jpg"
+            src="/img/cesarLogo.webp"
             alt="medalha cesar"
             layout="fixed"
             width={150}

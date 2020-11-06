@@ -28,7 +28,7 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (min-width: 428px) {
   body {
-    background-image: url('../public/img/bgImg.png');
+    background-image: url('../public/img/bgImg.webp');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

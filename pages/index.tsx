@@ -31,12 +31,16 @@ export default function Home() {
           name="description"
           content="Aplicação da cifra de César para criptografar e descriptografar texto"
         />
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=7" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=7" />
         <meta name="author" content="Iglan Cardeal" />
         <meta
           name="keywords"
           content="HTML, CSS, JavaScript, ReactJS, ReactDOM, NextJS, César, Cifra, Criptografia"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=VT323"
+          rel="stylesheet"
         />
       </Head>
 
