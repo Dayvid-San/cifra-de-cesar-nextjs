@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import Main from '../components/Main/Main';
 import RadioInput from '../components/RadioInput/RadioInput';
@@ -18,12 +18,9 @@ export default function Home() {
 
   const setActionHandler = (action: string) => {
     setAction(action);
+    setInputText('');
   };
   
-  useEffect(() => {
-    setInputText('');
-  }, [action]);
-
   return (
     <div>
       <Head>

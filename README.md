@@ -52,22 +52,35 @@ Neste projeto, voçê pode decidir qual ação deve ser realizada, encriptar ou 
 - Encriptar:
   Ao selecionar esta opção, voçê insira/escreva o texto a ser criptografado e clique no botão `Criptografar`. O resultado será exibido abaixo, mostrando o texto original(seu texto) e logo abaixo o texto criptografao.
   Exemplo:
-   <p align="center">Texto original</p>
+   <p align="center"><b>Texto original</b></p>
 
-   ```none
-    olá mundo! hello world
-   ```
+  ```none
+   olá mundo! hello world
+  ```
 
-   <p align="center">Texto criptografado</p>
+   <p align="center"><b>Texto criptografado</b></p>
 
-   ```none
-    roá pxqgr! khoor zruog
-   ```
+  ```none
+   roá pxqgr! khoor zruog
+  ```
 
 - Decriptar:
- Voçê usou ou recebeu uma mensagem que foi criptografada nesta aplicação, logo para vê-lo descriptografado, selecione a opção `Decriptar`. O resultado será exibido abaixo, mostrando o texto original(seu texto criptografado) e logo abaixo o texto descriptografado.
+  Voçê usou ou recebeu uma mensagem que foi criptografada nesta aplicação, logo para vê-lo descriptografado, selecione a opção `Decriptar`. O resultado será exibido abaixo, mostrando o texto original(seu texto criptografado) e logo abaixo o texto descriptografado.
+  Exemplo:
+  <p align="center"><b>Texto original criptografado</b></p>
+
+  ```none
+  hvwh whawr irl fulswrjudidgr
+  ```
+
+    <p align="center"><b>Texto descriptografado</b></p>
+
+  ```none
+  este texto foi criptografado
+  ```
 
 ## Como surgiu a idéia?
+A idéia começou como um desafio de um professor da disciplina *programação*. Ele me desafiou(sim! foi direto pra mim pois já estudava JavaScript por 6 meses) a criar um programa em Java que encripta um texto e exibe na tela. O desafio foi concluído antes do fim da aula. Mas, nesta época, eu começei a estudar React, e então para fixar os conhecimentos básicos da biblioteca, decidir refazer o desafio, desta vez desenvolvendo uma aplicação web. Inicialmente, este projeto estava em React puro, com nenhuma funcionalidade extra. Agora, este projeto que está documentado, foi feito em React, mas dentro do framework NextJS, também com o intuito de fixar os conceitos aprendido com o NextJS. A aplicação foi refeita, quase que por completo. Os assets e CSS foram reaproveitados em parte, mas todo o código foi reescrito para se encaixar na estrutura do NextJS e para usar as funcionalidades mais recentes do React(React Hooks) e NextJS.
 
 <p id="porque"></p>
 
@@ -75,24 +88,28 @@ Neste projeto, voçê pode decidir qual ação deve ser realizada, encriptar ou 
 
 <p id="host"></p>
 
-Este site está hospedado na plataforma [Heroku](https://dashboard.heroku.com) de forma gratuita. A plataforma usa a branch `master` deste projeto para realizar o deploy da aplicação, ou seja, qualquer alteração nesta branch irá refletir na aplicação em produção.
+Este site está hospedado na plataforma [Vercel](https://vercel.com/) de forma gratuita. A plataforma usa a branch `master` deste projeto para realizar o build e deploy da aplicação, ou seja, qualquer alteração nesta branch irá refletir na aplicação em produção. A Vercel é também a desenvolvedora do NextJS.
 
 ### Como usar localmente? :pushpin:
 
 <p id="como-usar"></p>
+#### Deseja usar a aplicação localmente e fazer as suas modificações?
 
-Para usar localmente em sua máquina, voce deve ter instalado em sua máquina o [NodeJS](https://nodejs.org/en/) com uma versão minima recomendada `v12.0.0` e o [Git](https://git-scm.com).
+Se sim, siga os passos abaixo 🤓
+
+Primeiramente voçê precisa ter instalado em sua máquina o [NodeJS](https://nodejs.org/en/) com uma versão minima recomendada `v12.0.0` e o [Git](https://git-scm.com).
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
+
 Para começar, faça o clone deste repositório. Digite o comando no terminal:
 
 ```bash
-$ git clone https://github.com/IglanCardeal/velpac
+$ git clone https://github.com/IglanCardeal/cifra-de-cesar-nextjs
 ```
 
 Acesse a pasta do projeto:
 
 ```bash
-$ cd velpac
+$ cd cifra-cesar-nextjs
 ```
 
 Instale as dependências do projeto usando o `npm` ou `yarn` se preferir:
@@ -113,21 +130,22 @@ $ yarn dev
 
 Agora abra seu navegador na URL `http://localhost:3000` e verá a página inicial do projeto.
 
-### Quais tecnologias foram usadas? :wrench:
+### Quais tecnologias/ferramentas foram usadas? :wrench:
 
 <p id="tecnologias"></p>
 
 - [NodeJS](https://nodejs.org/en/)
-- [Express](https://expressjs.com/pt-br/) (Framework web)
-- [Ejs](https://ejs.co/) (Template engine)
-- [Lazyload](https://www.npmjs.com/package/lazyload) (Otimizar carregamento de imagens)
-- [Bootstrap](https://getbootstrap.com/) (Framework CSS)
+- [TypeScript](https://www.typescriptlang.org/) 
+- [NextJS](https://nextjs.org/)
+- [React](https://pt-br.reactjs.org/)
 - [Git](https://git-scm.com)
 - [VSCode](https://code.visualstudio.com/)
 
 ### Performance da aplicação no [PageSpeed](https://developers.google.com/speed/pagespeed/insights/?hl=pt-br)
 
 <p id="pagespeed"></p>
+
+Como este site foi feito em NextJS, ele foi otimizado para oferecer a melhor experiência possível para o usuário. Diversos recursos do NextJS como `Automatic code-splitting`, `Server-side rendering`, `CSS-in-JS styling`, `Image Optimization`, dentre outros, e otimizações de imagens feitas por mim, resultaram em uma excelente métrica no Google PageSpeed. Veja abaixo os resultados obtidos nos testes para dispositivos móveis e computadores.
 
 - Mobile
   ![mobile performance](./public/img/cifra-cesar-ps-mobile.png)
@@ -138,12 +156,12 @@ Agora abra seu navegador na URL `http://localhost:3000` e verá a página inicia
 ### Autor
 
 <p id="autor"></p>
-
-<a href="https://blog.rocketseat.com.br/author/thiago/">
+  <kbd>
  <img style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/37749943?s=460&u=70f3bf022f3a0f28c332b1aa984510910818ef02&v=4" width="100px;" alt="iglan cardeal"/>
-
+  </kbd>
+  </br>
 <b>Iglan Cardeal</b>
-</a>
+
 
 Desenvolvido e mantido por Iglan Cardeal :hammer:
 Desenvolvedor NodeJS 💻 <br>
