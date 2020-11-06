@@ -80,7 +80,8 @@ Neste projeto, voçê pode decidir qual ação deve ser realizada, encriptar ou 
   ```
 
 ## Como surgiu a idéia?
-A idéia começou como um desafio de um professor da disciplina *programação*. Ele me desafiou(sim! foi direto pra mim pois já estudava JavaScript por 6 meses) a criar um programa em Java que encripta um texto e exibe na tela. O desafio foi concluído antes do fim da aula. Mas, nesta época, eu começei a estudar React, e então para fixar os conhecimentos básicos da biblioteca, decidir refazer o desafio, desta vez desenvolvendo uma aplicação web. Inicialmente, este projeto estava em React puro, com nenhuma funcionalidade extra. Agora, este projeto que está documentado, foi feito em React, mas dentro do framework NextJS, também com o intuito de fixar os conceitos aprendido com o NextJS. A aplicação foi refeita, quase que por completo. Os assets e CSS foram reaproveitados em parte, mas todo o código foi reescrito para se encaixar na estrutura do NextJS e para usar as funcionalidades mais recentes do React(React Hooks) e NextJS.
+
+A idéia começou como um desafio de um professor da disciplina _programação_. Ele me desafiou(sim! foi direto pra mim pois já estudava JavaScript por 6 meses) a criar um programa em Java que encripta um texto e exibe na tela. O desafio foi concluído antes do fim da aula. Mas, nesta época, eu começei a estudar React, e então para fixar os conhecimentos básicos da biblioteca, decidir refazer o desafio, desta vez desenvolvendo uma aplicação web. Inicialmente, este projeto estava em React puro, com nenhuma funcionalidade extra. Agora, este projeto que está documentado, foi feito em React, mas dentro do framework NextJS, também com o intuito de fixar os conceitos aprendido com o NextJS. A aplicação foi refeita, quase que por completo. Os assets e CSS foram reaproveitados em parte, mas todo o código foi reescrito para se encaixar na estrutura do NextJS e para usar as funcionalidades mais recentes do React(React Hooks) e NextJS.
 
 <p id="porque"></p>
 
@@ -136,7 +137,7 @@ Agora abra seu navegador na URL `http://localhost:3000` e verá a página inicia
 <p id="tecnologias"></p>
 
 - [NodeJS](https://nodejs.org/en/)
-- [TypeScript](https://www.typescriptlang.org/) 
+- [TypeScript](https://www.typescriptlang.org/)
 - [NextJS](https://nextjs.org/)
 - [React](https://pt-br.reactjs.org/)
 - [Git](https://git-scm.com)
@@ -149,9 +150,11 @@ Agora abra seu navegador na URL `http://localhost:3000` e verá a página inicia
 Como este site foi feito em NextJS, ele foi otimizado para oferecer a melhor experiência possível para o usuário. Diversos recursos do NextJS como `Automatic code-splitting`, `Server-side rendering`, `CSS-in-JS styling`, `Image Optimization`, dentre outros, e otimizações de imagens feitas por mim, resultaram em uma excelente métrica no Google PageSpeed. Veja abaixo os resultados obtidos nos testes para dispositivos móveis e computadores.
 
 - Mobile
+
   ![mobile performance](./public/img/cifra-cesar-ps-mobile.png)
 
 - Desktop
+
   ![desktop performance](./public/img/cifra-cesar-ps-desktop.png)
 
 ### Autor
@@ -162,7 +165,6 @@ Como este site foi feito em NextJS, ele foi otimizado para oferecer a melhor exp
   </kbd>
   </br>
 <b>Iglan Cardeal</b>
-
 
 Desenvolvido e mantido por Iglan Cardeal :hammer: </br>
 Desenvolvedor NodeJS 💻 </br>
