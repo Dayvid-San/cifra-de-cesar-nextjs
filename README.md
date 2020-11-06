@@ -93,6 +93,7 @@ Este site está hospedado na plataforma [Vercel](https://vercel.com/) de forma g
 ### Como usar localmente? :pushpin:
 
 <p id="como-usar"></p>
+
 #### Deseja usar a aplicação localmente e fazer as suas modificações?
 
 Se sim, siga os passos abaixo 🤓
@@ -163,8 +164,8 @@ Como este site foi feito em NextJS, ele foi otimizado para oferecer a melhor exp
 <b>Iglan Cardeal</b>
 
 
-Desenvolvido e mantido por Iglan Cardeal :hammer:
-Desenvolvedor NodeJS 💻 <br>
+Desenvolvido e mantido por Iglan Cardeal :hammer: </br>
+Desenvolvedor NodeJS 💻 </br>
 Entre em contato! 👋🏽
 
 - cmtcardeal@outlook.com :email:
