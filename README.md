@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="./public/img/cesarLogo.webp" height="auto" width="160" alt="medalha de cesar" style="border-radius: 50%"/>
+  <kbd>
+    <img src="./public/img/cesarLogo.webp" height="auto" width="160" alt="medalha de cesar" style="border-radius: 50%"/>
+  </kbd>
   
 # Cifra de César
 
