@@ -11,7 +11,7 @@
 
 <div align="center">
 
-![version](https://img.shields.io/badge/version-1.0.0-green) ![npm](https://img.shields.io/npm/v/npm) ![node-current](https://img.shields.io/badge/nodejs-%3E%3D12.0.0-green) ![bootstrap](https://img.shields.io/badge/bootstrap-v4.0-blueviolet) ![GitHub](https://img.shields.io/github/license/iglancardeal/velpac)
+![version](https://img.shields.io/badge/version-1.0.0-green) ![npm](https://img.shields.io/npm/v/npm) ![node-current](https://img.shields.io/badge/nodejs-%3E%3D12.0.0-green) ![nextjs](https://img.shields.io/badge/nextjs-10.0.1-blue) ![react](https://img.shields.io/badge/react-17.0.1-blue) ![typescript](https://img.shields.io/badge/typescript-%3E%3D4.0.5-red) ![GitHub](https://img.shields.io/github/license/IglanCardeal/cifra-de-cesar-nextjs)
 
 </div>
 
@@ -21,7 +21,7 @@
 
 - Concluído :muscle:
 
-- [:computer: Veja o site online aqui](https://cifra-de-cesar-nextjs.vercel.app/) 👀
+- [Veja o site online aqui](https://cifra-de-cesar-nextjs.vercel.app/) 👀 :computer:
 
 ## Tabela de conteúdos
 
@@ -32,6 +32,7 @@
 - [Como usar localmente](#como-usar)
   - [Pré Requisitos](#como-usar)
 - [Tecnologias](#tecnologias)
+- [Performance no PageSpeed](#pagespeed)
 - [Autor](#autor)
 <!--te-->
 
@@ -39,7 +40,7 @@
 
 <p id="sobre"></p>
 
-![tela-inicial](./frontend/public/img/inicial.png)
+![tela-inicial](./public/img/cifra-cesar-home.png)
 
 Este site realiza a divulgação do projeto desenvolvido para gerenciar semáforos. Este projeto fez parte da avaliação de disciplina _Circuitos Elétricos_, onde foi usado uma aplicação feita usando NodeJS e Arduino para controlar, através de uma interface web, o tempo de um semáforo de uma avenida e uma faixa de pedestre.
 Neste site, foi demonstrado o propósito do projeto:
@@ -108,6 +109,13 @@ Agora abra seu navegador na URL `http://localhost:3000` e verá a página inicia
 - [Git](https://git-scm.com)
 - [VSCode](https://code.visualstudio.com/)
 
+### Performance da aplicação no [PageSpeed](https://developers.google.com/speed/pagespeed/insights/?hl=pt-br)
+
+ - Mobile
+  ![mobile performance](./public/img/cifra-cesar-ps-mobile.png)
+
+ - Desktop
+  ![desktop performance](./public/img/cifra-cesar-ps-desktop.png)
 ### Autor
 
 <p id="autor"></p>
