@@ -39,7 +39,7 @@ const RadioInput: React.FC<Props> = (props) => {
         checked={action === 'decrypt'}
         onChange={radioInputHandler}
       />
-      <label htmlFor="decrypt">Descriptar texto</label>
+      <label htmlFor="decrypt">Decriptar texto</label>
       </section>
     </div>
   );

@@ -29,8 +29,9 @@
 
 <!--ts-->
 
-- [Sobre](#sobre)
-- [Onde está hospedada](#host)
+- [Sobre o projeto](#sobre)
+- [Como surgiu?](#porque)
+- [Onde está hospedado](#host)
 - [Como usar localmente](#como-usar)
   - [Pré Requisitos](#como-usar)
 - [Tecnologias](#tecnologias)
@@ -44,18 +45,30 @@
 
 ![tela-inicial](./public/img/cifra-cesar-home.png)
 
-Este site realiza a divulgação do projeto desenvolvido para gerenciar semáforos. Este projeto fez parte da avaliação de disciplina _Circuitos Elétricos_, onde foi usado uma aplicação feita usando NodeJS e Arduino para controlar, através de uma interface web, o tempo de um semáforo de uma avenida e uma faixa de pedestre.
-Neste site, foi demonstrado o propósito do projeto:
+Este projeto tem como base o conceito da **cifra de César**, também conhecida como **cifra de troca**, **código de César** ou **troca de César**. A Cifra de César é uma técnica de criptografia bastante simples e provavelmente a uma mais conhecida de todas. Trata-se de um tipo de cifra de substituição, na qual cada letra de um texto a ser criptografado é substituída por outra letra, presente no alfabeto porém deslocada um certo número de posições à esquerda ou à direita. Por exemplo, se usarmos uma troca de quatro posições à esquerda, cada letra é substituída pela letra que está quatro posições adiante no alfabeto, e nesse caso a letra A seria substituída pela letra E, B por F, C por G, e assim sucessivamente.
 
-- o problema;
-- a solução demonstrada;
-- como funciona;
-- o esquemático do projeto no arduino;
-- a arquitetura de comunicação da **interface/servidor/arduino**;
-- os serviços oferecidos;
-- a documentação;
-- a equipe envolvida no projeto;
-- contato da empresa(pseudo contato) e da equipe(contato real dos integrantes);
+Neste projeto, voçê pode decidir qual ação deve ser realizada, encriptar ou decriptar um texto.
+
+- Encriptar:
+  Ao selecionar esta opção, voçê insira/escreva o texto a ser criptografado e clique no botão `Criptografar`. O resultado será exibido abaixo, mostrando o texto original(seu texto) e logo abaixo o texto criptografao.
+  Exemplo:
+   <p align="center">Texto original</p>
+
+   ```none
+    olá mundo! hello world
+   ```
+
+   <p align="center">Texto criptografado</p>
+
+   ```none
+    roá pxqgr! khoor zruog
+   ```
+
+- Decriptar:
+
+## Como surgiu a idéia?
+
+<p id="porque"></p>
 
 ### Onde está? :rocket:
 
@@ -113,11 +126,14 @@ Agora abra seu navegador na URL `http://localhost:3000` e verá a página inicia
 
 ### Performance da aplicação no [PageSpeed](https://developers.google.com/speed/pagespeed/insights/?hl=pt-br)
 
- - Mobile
+<p id="pagespeed"></p>
+
+- Mobile
   ![mobile performance](./public/img/cifra-cesar-ps-mobile.png)
 
- - Desktop
+- Desktop
   ![desktop performance](./public/img/cifra-cesar-ps-desktop.png)
+
 ### Autor
 
 <p id="autor"></p>
