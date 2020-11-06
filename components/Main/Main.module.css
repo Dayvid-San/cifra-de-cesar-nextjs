@@ -8,7 +8,7 @@
   /* min-height: 900px; */
   padding: 30px;
   padding-top: 0px;
-  margin: 25vw;
+  margin: 20vw;
   margin-top: 10px;
   margin-bottom: 10px;
   /* min-width: 400px; */
@@ -23,11 +23,8 @@
 .Image {
   border: 2px solid grey;
   border-radius: 100px;
-  block-size: 150px;
   animation: spin infinite linear;
   animation-duration: 15s;
-  /* -webkit-animation: spin infinite linear;
-  -webkit-animation-duration: 15s; */
   -webkit-animation:spin 15s infinite linear;
   -moz-animation:spin 15s infinite linear;
   -o-animation:spin 15s infinite linear;

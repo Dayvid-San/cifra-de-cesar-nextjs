@@ -1,8 +1,9 @@
-import React, { FormEvent, ReactChildren, ReactNode, useState } from 'react';
+import React, { useState } from 'react';
 
 import styles from './TextInput.module.css';
 
 interface Props {
+  action: string;
   getInputText: (text: string) => void;
 }
 
@@ -20,12 +21,23 @@ const TextInput: React.FC<Props> = (props) => {
 
   return (
     <>
-      <p>
-        Você pode escrever e ver abaixo o texto original e o texto
-        criptografado.
-        <br />
-        Caracteres acentuados ou especiais no seu texto não sofrerão alteração.
-      </p>
+      {props.action === 'crypt' ? (
+        <p>
+          Você pode escrever e ver abaixo o texto original e o texto
+          criptografado.
+          <br />
+          Caracteres acentuados ou especiais no seu texto não sofrerão
+          alteração.
+        </p>
+      ) : (
+        <p>
+          Coloque o texto criptografado e veja-o descriptografado logo abaixo.
+          <br />
+          Caracteres acentuados ou especiais no seu texto não sofrerão
+          alteração.
+        </p>
+      )}
+
       <label htmlFor="input-text">Digite algo abaixo:</label>
       <br />
       <textarea
@@ -37,8 +49,9 @@ const TextInput: React.FC<Props> = (props) => {
         value={textInput}
       />
       <br />
+
       <button className={styles.Button} onClick={buttonClickHandler}>
-        Criptografar
+        {props.action === 'crypt' ? 'Criptografar' : 'Descriptografar'}
       </button>
     </>
   );

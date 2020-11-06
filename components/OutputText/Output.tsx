@@ -7,11 +7,12 @@ import encrypter from './encrypter';
 
 interface Props {
   inputText: string;
+  action: string; // action defini se cryptografa ou descriptografa
 }
 
 const DecodedText: React.FC<Props> = (props) => {
   const [copied, setCopied] = useState(false);
-  const cryptedText = encrypter(props.inputText);
+  const cryptedText = encrypter(props.inputText, props.action);
 
   const onCopyHandler = () => {
     setCopied(true);
@@ -31,7 +32,9 @@ const DecodedText: React.FC<Props> = (props) => {
           <button className={style.CopyButton}>Copiar texto</button>
         </CopyToClipboard>
         <br />
-        <dialog className={style.Dialog} open={copied}>Texto copiado!</dialog>
+        <dialog className={style.Dialog} open={copied}>
+          Texto copiado!
+        </dialog>
       </div>
     </>
   );

@@ -1,13 +1,14 @@
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 
 import styles from './Main.module.css';
 
 const Main: React.FC = (props) => {
-  const [time, setTime] = useState('');
+  const [time, setTime] = useState(new Date().toLocaleTimeString('br'));
 
   useEffect(() => {
     const timer = window.setInterval(() => {
-      setTime(new Date().toLocaleTimeString('br')); 
+      setTime(new Date().toLocaleTimeString('br'));
     }, 1000);
 
     return () => {
@@ -21,7 +22,14 @@ const Main: React.FC = (props) => {
 
       <div className={styles.MainContent}>
         <figure>
-          <img className={styles.Image} src="./img/cesarLogo.jpg" alt="cesar" />
+          <Image
+            className={styles.Image}
+            src="/img/cesarLogo.jpg"
+            alt="medalha cesar"
+            layout="fixed"
+            width={150}
+            height={150}
+          />
           <sub>{time}</sub>
         </figure>
         <p className={styles.AppParagraph}>

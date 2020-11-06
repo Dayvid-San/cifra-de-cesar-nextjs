@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useState } from 'react';
 
 import Main from '../components/Main/Main';
@@ -5,25 +6,54 @@ import TextInput from '../components/TextInput/TextInput';
 import OriginalText from '../components/OriginalText/OriginalText';
 import Output from '../components/OutputText/Output';
 import Footer from '../components/Footer/Footer';
+import RadioInput from '../components/RadioInput/RadioInput';
 
 export default function Home() {
   const [inputText, setInputText] = useState('');
+  const [action, setAction] = useState('crypt');
 
   const getInputTextHandler = (text: string) => {
     setInputText(text);
   };
 
+  const setActionHandler = (action: string) => {
+    setAction(action);
+    setInputText('');
+  };
+
   return (
-    <Main>
-      <TextInput getInputText={getInputTextHandler} />
+    <div>
+      <Head>
+        <title>Cifra de César</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta charSet="UTF-8" />
+        <meta
+          name="description"
+          content="Aplicação da cifra de César para criptografar e descriptografar texto"
+        />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=7" />
+        <meta name="author" content="Iglan Cardeal" />
+        <meta
+          name="keywords"
+          content="HTML, CSS, JavaScript, ReactJS, ReactDOM, NextJS, César, Cifra, Criptografia"
+        />
+      </Head>
 
-      {(inputText && <OriginalText originalText={inputText} />) || (
-        <p>Escreva um texto para criptografar.</p>
-      )}
+      <Main>
+        {/* Esse RadioInput server para definir se vai cryptar ou decryptar o texto */}
+        <RadioInput setActionFunction={setActionHandler} />
 
-      {inputText && <Output inputText={inputText} />}
+        <TextInput getInputText={getInputTextHandler} action={action} />
 
-      <Footer />
-    </Main>
+        {(inputText && <OriginalText originalText={inputText} />) || (
+          <p>Escreva um texto para criptografar.</p>
+        )}
+
+        {inputText && <Output inputText={inputText} action={action} />}
+
+        <Footer />
+      </Main>
+    </div>
   );
 }

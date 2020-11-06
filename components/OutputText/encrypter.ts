@@ -1,4 +1,4 @@
-const encrypter = (text: string) => {
+const encrypter = (text: string, action: string) => {
   const arrayText = text.toLowerCase().split('');
 
   const numeric = [
@@ -53,9 +53,17 @@ const encrypter = (text: string) => {
     const indexAlpha = alpha.indexOf(letter);
     const indexNumeric = numeric.indexOf(letter);
 
-    if (indexAlpha !== -1) return alpha[indexAlpha + 3];
+    if (action === 'crypt') {
+      if (indexAlpha !== -1) return alpha[indexAlpha + 3];
 
-    if (indexNumeric !== -1) return numeric[indexNumeric + 3];
+      if (indexNumeric !== -1) return numeric[indexNumeric + 3];
+    }
+
+    if (action === 'decrypt') {
+      if (indexAlpha !== -1) return alpha[indexAlpha - 3];
+
+      if (indexNumeric !== -1) return numeric[indexNumeric - 3];
+    }
 
     return letter;
   });
