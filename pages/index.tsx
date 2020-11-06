@@ -39,7 +39,7 @@ export default function Home() {
           content="HTML, CSS, JavaScript, ReactJS, ReactDOM, NextJS, César, Cifra, Criptografia"
         />
         <link
-          href="https://fonts.googleapis.com/css?family=VT323"
+          href="https://fonts.googleapis.com/css?family=VT323&display=swap"
           rel="stylesheet"
         />
       </Head>

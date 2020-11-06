@@ -5,7 +5,7 @@
 
 <br>
 
-### Site para usar a cifra de César para **encriptar/descriptar** texto
+### Site para usar a cifra de César para encriptar/descriptar texto
 
 </div>
 
@@ -21,7 +21,7 @@
 
 - Concluído :muscle:
 
-- [:computer: **Veja o site online aqui**](https://cifra-de-cesar-nextjs.vercel.app/)
+- [:computer: Veja o site online aqui](https://cifra-de-cesar-nextjs.vercel.app/) 👀
 
 ## Tabela de conteúdos
 
