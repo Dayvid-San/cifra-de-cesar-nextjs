@@ -7,7 +7,7 @@
 
 <br>
 
-### Site para usar a cifra de César para encriptar/descriptar texto
+## Site para usar a cifra de César para encriptar/descriptar texto
 
 </div>
 
@@ -19,7 +19,7 @@
 
 ---
 
-## Status do projeto
+### Status do projeto
 
 - Concluído :muscle:
 
