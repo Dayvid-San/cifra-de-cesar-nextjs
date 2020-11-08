@@ -26,6 +26,7 @@
 - [Veja o site online aqui](https://cifra-de-cesar-nextjs.vercel.app/) 👀 :computer:
 
 ### Features
+
 Usando o conceito da cifra de César, podemos:
 
 - [x] Criptografar um texto
