@@ -25,6 +25,17 @@
 
 - [Veja o site online aqui](https://cifra-de-cesar-nextjs.vercel.app/) 👀 :computer:
 
+### Features
+Usando o conceito da cifra de César, podemos:
+
+- [x] Criptografar um texto
+- [x] Descriptografar um texto criptografado neste site
+
+Recursos adicionais:
+
+- [x] Copiar o texto de saída apenas com um botão `Copiar texto`
+- [ ] Mudar o tema para `light` ou `dark` (claro/escuro)
+
 ## Tabela de conteúdos
 
 <!--ts-->
