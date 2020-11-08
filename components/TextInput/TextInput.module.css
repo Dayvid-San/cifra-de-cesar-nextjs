@@ -1,7 +1,7 @@
 .InputText {
-  caret-color: aqua;
+  caret-color: #00ffff;
   margin: 10px;
-  background-color: black;
+  background-color: #000000;
   font-size: inherit;
   color: inherit;
   font-family: inherit;
@@ -14,17 +14,33 @@
 
 .Button {
   margin: 10px;
-  background-color: black;
   font-size: inherit;
   color: inherit;
   font-family: inherit;
   border-radius: 15px;
   border: 1px solid aqua;
+  background-color: #000000;
   padding: 15px;
   cursor: pointer;
-  transition: .2s all;
+  transition: 0.2s all;
 }
 
 .Button:hover {
   background-color: rgba(13, 150, 150, 0.219);
+}
+
+@media (prefers-color-scheme: light) {
+  .InputText {
+    background-color: #d3cfcf;
+    caret-color: #000000;
+    border: 2px solid #000000;
+  }
+
+  .Button {
+    background: #f3f3f3;
+  }
+
+  .Button:hover {
+    background-color: rgba(13, 150, 150, 0.466);
+  }
 }

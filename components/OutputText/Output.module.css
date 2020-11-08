@@ -14,7 +14,7 @@
 }
 
 .OutputTextParagraph {
-  text-shadow: 0 3px 2px black;
+  text-shadow: 0 1px 1px black;
 }
 
 .OutputTextParagraph::selection {
@@ -30,8 +30,8 @@
 .CopyButton {
   margin: 10px;
   background-color: black;
-  font-size: inherit;
   color: inherit;
+  font-size: inherit;
   font-family: inherit;
   border-radius: 15px;
   border: 1px solid aqua;
@@ -47,11 +47,11 @@
 .Dialog {
   background: #000;
   color: inherit;
-  animation: fade .5s linear;
-  -webkit-animation: fade .5s linear;
-  -moz-animation: fade .5s linear;
-  -o-animation: fade .5s linear;
-  -ms-animation: fade .5s linear;
+  animation: fade 0.5s linear;
+  -webkit-animation: fade 0.5s linear;
+  -moz-animation: fade 0.5s linear;
+  -o-animation: fade 0.5s linear;
+  -ms-animation: fade 0.5s linear;
 }
 
 @keyframes fade {
@@ -112,4 +112,30 @@
   }
 }
 
+@media (prefers-color-scheme: light) {
+  .OutputText {
+    background-color: #d3cfcf;
+  }
 
+  .OutputText p::selection {
+    background: rgba(0, 0, 0, 0.61);
+    color: #fff;
+  }
+  
+  .OutputText p::-moz-selection {
+    background: rgba(0, 0, 0, 0.61);
+    color: #fff;
+  }
+
+  .Dialog {
+    color: #fff;
+  }
+
+  .CopyButton {
+    background-color: #f3f3f3;
+  }
+
+  .CopyButton:hover {
+    background-color: rgba(13, 150, 150, 0.466);
+  }
+}

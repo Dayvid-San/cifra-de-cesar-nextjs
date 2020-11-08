@@ -35,7 +35,7 @@ Usando o conceito da cifra de César, podemos:
 Recursos adicionais:
 
 - [x] Copiar o texto de saída apenas com um botão `Copiar texto`
-- [ ] Mudar o tema para `light` ou `dark` (claro/escuro)
+- [x] Mudar o tema para `light` ou `dark` (claro/escuro) baseado nas configurações do nevegador do usuário.
 
 ## Tabela de conteúdos
 
