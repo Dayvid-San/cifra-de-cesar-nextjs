@@ -1,7 +1,7 @@
 .App {
   border: 1px solid white;
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.8);  
+  background-color: var(--bg);  
   padding: 30px;
   padding-top: 0px;
   margin: 20vw;
@@ -92,11 +92,5 @@
   .MainContent {
     display: inline;
     flex-direction: column;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .App {
-    background-color: rgba(224, 223, 223, 0.8); 
   }
 }

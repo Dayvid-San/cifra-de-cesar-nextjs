@@ -1,5 +1,5 @@
 .OutputText {
-  background-color: rgba(13, 150, 150, 0.4);
+  background-color: var(--output-bg);
   border: 3px double black;
   border-radius: 15px;
   padding: 20px;
@@ -18,18 +18,18 @@
 }
 
 .OutputTextParagraph::selection {
-  background: rgba(0, 0, 0, 0.61);
-  color: inherit;
+  background: var(--selection-text-bg);
+  color: var(--selection-text-color);
 }
 
 .OutputTextParagraph::-moz-selection {
-  background: rgba(0, 0, 0, 0.61);
-  color: inherit;
+  background: var(--selection-text-bg);
+  color: var(--selection-text-color);
 }
 
 .CopyButton {
   margin: 10px;
-  background-color: black;
+  background-color: var(--btn-bg);
   color: inherit;
   font-size: inherit;
   font-family: inherit;
@@ -45,8 +45,8 @@
 }
 
 .Dialog {
-  background: #000;
-  color: inherit;
+  background: var(--input-bg);
+  color: var(--text-color);
   animation: fade 0.5s linear;
   -webkit-animation: fade 0.5s linear;
   -moz-animation: fade 0.5s linear;
@@ -109,33 +109,5 @@
 
   100% {
     opacity: 1;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .OutputText {
-    background-color: #d3cfcf;
-  }
-
-  .OutputText p::selection {
-    background: rgba(0, 0, 0, 0.61);
-    color: #fff;
-  }
-  
-  .OutputText p::-moz-selection {
-    background: rgba(0, 0, 0, 0.61);
-    color: #fff;
-  }
-
-  .Dialog {
-    color: #fff;
-  }
-
-  .CopyButton {
-    background-color: #f3f3f3;
-  }
-
-  .CopyButton:hover {
-    background-color: rgba(13, 150, 150, 0.466);
   }
 }

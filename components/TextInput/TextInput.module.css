@@ -1,7 +1,7 @@
 .InputText {
-  caret-color: #00ffff;
+  caret-color: var(--caret-color);
   margin: 10px;
-  background-color: #000000;
+  background-color: var(--input-bg);
   font-size: inherit;
   color: inherit;
   font-family: inherit;
@@ -19,28 +19,28 @@
   font-family: inherit;
   border-radius: 15px;
   border: 1px solid aqua;
-  background-color: #000000;
+  background-color: var(--btn-bg);
   padding: 15px;
   cursor: pointer;
   transition: 0.2s all;
 }
 
 .Button:hover {
-  background-color: rgba(13, 150, 150, 0.219);
+  background-color: var(--btn-bg-hover);
 }
 
 @media (prefers-color-scheme: light) {
   .InputText {
-    background-color: #d3cfcf;
-    caret-color: #000000;
+    /* background-color: #d3cfcf;
+    caret-color: #000000; */
     border: 2px solid #000000;
   }
 
-  .Button {
+  /* .Button {
     background: #f3f3f3;
   }
 
   .Button:hover {
-    background-color: rgba(13, 150, 150, 0.466);
-  }
+    background-color: #0d969677;
+  } */
 }

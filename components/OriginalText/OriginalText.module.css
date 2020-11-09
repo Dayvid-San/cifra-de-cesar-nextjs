@@ -1,5 +1,5 @@
 .OriginalText {
-  background-color: rgba(13, 150, 150, 0.4);
+  background-color: var(--output-bg);
   border: 3px double black;
   border-radius: 15px;
   padding: 20px;
@@ -15,13 +15,13 @@
 }
 
 .OriginalText p::selection {
-  background: rgba(0, 0, 0, 0.61);
-  color: inherit;
+  background: var(--selection-text-bg);
+  color: var(--selection-text-color);
 }
 
 .OriginalText p::-moz-selection {
-  background: rgba(0, 0, 0, 0.61);
-  color: inherit;
+  background: var(--selection-text-bg);
+  color: var(--selection-text-color);
 }
 
 @keyframes enable {
@@ -49,21 +49,5 @@
 
   100% {
     opacity: 1;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .OriginalText {
-    background-color: #d3cfcf;
-  }
-
-  .OriginalText p::selection {
-    background: rgba(0, 0, 0, 0.61);
-    color: #fff;
-  }
-  
-  .OriginalText p::-moz-selection {
-    background: rgba(0, 0, 0, 0.61);
-    color: #fff;
   }
 }
