@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       }}
     >
       Desenvolvido e mantido por <br />
-      Iglan Cardeal <br />
+      Iglan Cardeal e Dayvid Santana <br />
       {new Date().getFullYear()}
     </footer>
   );
