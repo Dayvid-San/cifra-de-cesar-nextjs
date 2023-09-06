@@ -1,90 +1,89 @@
-const encrypter = (text: string, action: string) => {
+const encrypter = (text: string, action: string, key: number): string => {
   const arrayText = text.toLowerCase().split('');
 
-  const numeric = [
-    '0',
-    '1',
-    '2',
-    '3',
-    '4',
-    '5',
-    '6',
-    '7',
-    '8',
-    '9',
-    '0',
-    '1',
-    '2',
+  const numeric: string[] = [
+      '0',
+      '1',
+      '2',
+      '3',
+      '4',
+      '5',
+      '6',
+      '7',
+      '8',
+      '9',
+      '0',
+      '1',
+      '2',
   ];
 
-  const alpha = [
-    'a',
-    'b',
-    'c',
-    'd',
-    'e',
-    'f',
-    'g',
-    'h',
-    'i',
-    'j',
-    'k',
-    'l',
-    'm',
-    'n',
-    'o',
-    'p',
-    'q',
-    'r',
-    's',
-    't',
-    'u',
-    'v',
-    'w',
-    'x',
-    'y',
-    'z',
-    'a',
-    'b',
-    'c',
+  const alpha: string[] = [
+      'a',
+      'b',
+      'c',
+      'd',
+      'e',
+      'f',
+      'g',
+      'h',
+      'i',
+      'j',
+      'k',
+      'l',
+      'm',
+      'n',
+      'o',
+      'p',
+      'q',
+      'r',
+      's',
+      't',
+      'u',
+      'v',
+      'w',
+      'x',
+      'y',
+      'z',
+      'a',
+      'b',
+      'c',
   ];
 
   const cryptedArray = arrayText.map((letter: string) => {
-    const indexAlpha = alpha.indexOf(letter);
-    const indexNumeric = numeric.indexOf(letter);
+      const indexAlpha = alpha.indexOf(letter);
+      const indexNumeric = numeric.indexOf(letter);
 
-    if (action === 'crypt') {
-      if (indexAlpha !== -1) return alpha[indexAlpha + 3];
+      if (action === 'crypt') {
+          if (indexAlpha !== -1) return alpha[(indexAlpha + key) % alpha.length];
 
-      if (indexNumeric !== -1) return numeric[indexNumeric + 3];
-    }
-
-    if (action === 'decrypt') {
-      if (indexAlpha !== -1) {
-        if (indexAlpha <= 2) {
-          let newArr = ['x', 'y', 'z', ...alpha];
-
-          return newArr[indexAlpha];
-        }
-
-        return alpha[indexAlpha - 3];
+          if (indexNumeric !== -1) return numeric[(indexNumeric + key) % numeric.length];
       }
 
-      if (indexNumeric !== -1) {
-        if (indexNumeric <= 2) {
-          let newArr = ['7', '8', '9', ...numeric];
-          
-          return newArr[indexNumeric];
-        }
+      if (action === 'decrypt') {
+          if (indexAlpha !== -1) {
+              if (indexAlpha < key) {
+                  const newIndex = alpha.length - (key - indexAlpha);
+                  return alpha[newIndex];
+              }
 
-        return numeric[indexNumeric - 3];
+              return alpha[indexAlpha - key];
+          }
+
+          if (indexNumeric !== -1) {
+              if (indexNumeric < key) {
+                  const newIndex = numeric.length - (key - indexNumeric);
+                  return numeric[newIndex];
+              }
+
+              return numeric[indexNumeric - key];
+          }
       }
-    }
 
-    return letter;
+      return letter;
   });
 
   return cryptedArray.join('');
 };
+
 
 export default encrypter;
