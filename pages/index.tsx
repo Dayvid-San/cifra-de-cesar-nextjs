@@ -30,6 +30,8 @@ export default function Home() {
         <RadioInput setActionFunction={setActionHandler} />
 
         <TextInput getInputText={getInputTextHandler} action={action} />
+        
+        <input type="number" name="" placeholder='Digite a chave' id="" />
 
         {(inputText && <OriginalText originalText={inputText} />) ||
           (action === 'crypt' ? (
@@ -39,7 +41,6 @@ export default function Home() {
           ))}
 
         {inputText && <Output inputText={inputText} action={action} />}
-
         <Footer />
       </Main>
     </div>
