@@ -1,51 +1,88 @@
-import React, { useEffect, useState } from 'react';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+const encrypter = (text: string, action: string, key: number): string => {
+  const arrayText = text.toLowerCase().split('');
 
-import style from './Output.module.css';
+  const numeric: string[] = [
+      '0',
+      '1',
+      '2',
+      '3',
+      '4',
+      '5',
+      '6',
+      '7',
+      '8',
+      '9',
+      '0',
+      '1',
+      '2',
+  ];
 
-import encrypter from './encrypter';
+  const alpha: string[] = [
+      'a',
+      'b',
+      'c',
+      'd',
+      'e',
+      'f',
+      'g',
+      'h',
+      'i',
+      'j',
+      'k',
+      'l',
+      'm',
+      'n',
+      'o',
+      'p',
+      'q',
+      'r',
+      's',
+      't',
+      'u',
+      'v',
+      'w',
+      'x',
+      'y',
+      'z',
+      'a',
+      'b',
+      'c',
+  ];
 
-interface Props {
-  inputText: string;
-  action: string; // action defini se cryptografa ou descriptografa
-}
+  const cryptedArray = arrayText.map((letter: string) => {
+      const indexAlpha = alpha.indexOf(letter);
+      const indexNumeric = numeric.indexOf(letter);
 
-const DecodedText: React.FC<Props> = (props) => {
-  const [copied, setCopied] = useState(false);
-  const cryptedText = encrypter(props.inputText, props.action);
+      if (action === 'crypt') {
+          if (indexAlpha !== -1) return alpha[(indexAlpha + key) % alpha.length];
 
-  const onCopyHandler = () => {
-    setCopied(true);
+          if (indexNumeric !== -1) return numeric[(indexNumeric + key) % numeric.length];
+      }
 
-    window.setTimeout(() => {
-      setCopied(false);
-    }, 4000);
-  };
+      if (action === 'decrypt') {
+          if (indexAlpha !== -1) {
+              if (indexAlpha < key) {
+                  const newIndex = alpha.length - (key - indexAlpha);
+                  return alpha[newIndex];
+              }
 
-  useEffect(() => {
-    return () => setCopied(false);
-  }, []);
-  
-  return (
-    <>
-      <h2>
-        {props.action === 'crypt'
-          ? 'Texto criptografado'
-          : 'Texto descriptografado'}
-      </h2>
-      <div className={style.OutputText}>
-        <p className={style.OutputTextParagraph}>{cryptedText}</p>
+              return alpha[indexAlpha - key];
+          }
 
-        <CopyToClipboard text={cryptedText} onCopy={onCopyHandler}>
-          <button className={style.CopyButton}>Copiar texto</button>
-        </CopyToClipboard>
-        <br />
-        <dialog className={style.Dialog} open={copied}>
-          Texto copiado!
-        </dialog>
-      </div>
-    </>
-  );
+          if (indexNumeric !== -1) {
+              if (indexNumeric < key) {
+                  const newIndex = numeric.length - (key - indexNumeric);
+                  return numeric[newIndex];
+              }
+
+              return numeric[indexNumeric - key];
+          }
+      }
+
+      return letter;
+  });
+
+  return cryptedArray.join('');
 };
 
-export default DecodedText;
+export default encrypter;

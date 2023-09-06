@@ -38,7 +38,7 @@ export default function Home() {
             <p>Escreva um texto para descriptografar.</p>
           ))}
 
-        {inputText && <Output inputText={inputText} action={action} />}
+        {inputText && <Output inputText={inputText} action={action} key={3} />}
 
         <Footer />
       </Main>
